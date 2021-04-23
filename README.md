@@ -128,7 +128,33 @@ ssh-keygen -t rsa -C"youremail@example.com"
 创建SSH Key
 设置时一路回车
 在目录文件里面可以看到.ssh文件夹
+不要把.ssh文件上传到GitHub上！！！
 ```
+
+
+
+### 3.1 添加远程仓库
+
+```
+git remote add origin ssh/https
+origin是远程库名字，默认origin
+```
+
+```
+git push -u origin main
+首次把本地库的所有内容推送到远程库上
+之后每次要推送到远程库上只需要
+git push origin main
+```
+
+```
+git remote -v
+查看远程库版本
+git remote rm origin 
+删除远程库
+```
+
+
 
 
 
