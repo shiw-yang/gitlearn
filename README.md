@@ -199,5 +199,9 @@ git branch -d dev
 
 
 
+### 4.2 解决冲突
+
+Creating a new branch is quick & simple.
+
 
 
