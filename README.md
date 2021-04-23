@@ -183,7 +183,7 @@ git branch
 
 * 不同分支下的工作都是独立的
 
-  #### 4.1.2 合并分支
+#### 4.1.2 合并分支
 
 ```
 git merge dev
@@ -197,7 +197,18 @@ git branch -d dev
 删除dev分支
 ```
 
+#### 4.1.4 switch 命令
 
+```
+git switch -c dev
+创建并切换到新的dev分支
+git switch main
+直接切换已有的main分支
+```
 
+* Git 鼓励大量使用分支
 
+### 4.2 解决冲突
+
+Creating a new branch is quick AND simple.
 
