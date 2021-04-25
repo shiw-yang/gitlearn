@@ -209,12 +209,28 @@ git switch main
 * Git 鼓励大量使用分支
 
 ### 4.2 解决冲突
-<<<<<<< HEAD
 
-Creating a new branch is quick & simple.
+* **两个分支有不同内容时，合并分支时会出现冲突 **
 
-=======
->>>>>>> featurel
+```
+git merge dev
+两个有冲突的分支合并 会有提示冲突
+git status
+可以看到文件存在冲突，需要手动解决冲突后再提交
+手动修改冲突之后在把文件提交
+```
 
-Creating a new branch is quick AND simple.
+### 4.3 分支管理策略
+
+* ` main`分支应该是非常稳定的，用来发布新版本，平时不能在上面干活；
+* `dev`版本是用来干活的。到某个时候要发布新版本的时候，再把`dev`分支合并到`main`分支上
+
+### 4.4 bug分支
+
+``` 
+git stash 
+把工作现场储藏起来，等恢复现场后继续工作
+git stash list
+恢复现场工作
+```
 
